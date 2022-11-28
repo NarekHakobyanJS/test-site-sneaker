@@ -1,0 +1,36 @@
+.card {
+    margin-top: 35px;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 210px;
+    border-radius: 15px;
+    transition: .3s all linear;
+    height: 320px;
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 14px 30px rgba(0, 0, 0, .5);
+      cursor: pointer;
+    }
+
+    .cardBottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .sendToCart {
+        color: palevioletred;
+        font-size: 22px;
+        cursor: pointer;
+      }
+
+      .active {
+        color : greenyellow;
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+  }

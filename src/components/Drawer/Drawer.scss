@@ -1,0 +1,112 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 10;
+}
+
+.drawer {
+  position: absolute;
+  width: 350px;
+  padding: 30px;
+  height: 100%;
+  right: 0;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+
+  .cartTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    svg {
+      font-size: 28px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+.item {
+  flex: 1;
+  height: 500px;
+  overflow-y: scroll;
+
+  .cartItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+      margin-right: 20px;
+    }
+
+    .cartItemInfo {
+      margin-right: 20px;
+
+      p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        margin-right: 15px;
+      }
+
+      b {
+        font-size: 13px;
+        color: black;
+      }
+    }
+
+    svg {
+      font-size: 28px;
+      cursor: pointer;
+      opacity: 0.5;
+      position: absolute;
+      transition: .3s all linear;
+      top: 10px;
+      right: 10px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+
+}
+
+.empty {
+  width: 280px;
+  margin: 0 auto;
+
+  h4 {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+  }
+}
+
+.greenButton {
+  position: relative;
+
+  .goToBack {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}
